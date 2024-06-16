@@ -42,7 +42,7 @@ class display_print:
             # line's length increases by the index of n
             sx=n*math.sin(a)+P1[0]
             sy=n*math.cos(a)+P1[1]
-        # This is to avoid gaps
+        # avoid diagonal gaps in the line
         for i, c in enumerate(coords):
             if i > 0 and i < len(coords):
                 c1=1 if [c[0]+1,c[1]] in coords else 0
